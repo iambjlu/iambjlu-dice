@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/services.dart';
 
 void main() => runApp(DiceApp());
 
@@ -19,11 +20,12 @@ class DiceScreen extends StatefulWidget {
 }
 
 class _DiceScreenState extends State<DiceScreen> {
-  int _diceNumber = Random().nextInt(6) + 1;
+  String _diceResult = '?';
 
   void _rollDice() {
+    HapticFeedback.vibrate();
     setState(() {
-      _diceNumber = Random().nextInt(6) + 1;
+      _diceResult = (Random().nextInt(6) + 1).toString();
     });
   }
 
@@ -45,7 +47,7 @@ class _DiceScreenState extends State<DiceScreen> {
               ),
             ),
             Text(
-              '$_diceNumber',
+              '$_diceResult',
               style: TextStyle(
                 fontFamily: "SF Pro Display",
                 fontSize: 40,
