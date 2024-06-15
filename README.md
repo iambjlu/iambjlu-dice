@@ -1,20 +1,21 @@
 # 骰子
 
 選擇困難終結者<br>
-Android、iOS版有觸覺回饋功能<br>
+
+它只是個Side Project練手Dart語言，同時解決自己和周圍的人的選擇困難<br>
+所以可能有些細節改法較為粗糙或是看起來預設
 
 ### 支援平台：
-Android、Windows可以在<a href="https://github.com/iambjlu/iambjlu-dice/releases">Releases頁面</a>下載<br>
-其他平台可以自行編譯或使用<a href="#網頁版">網頁版</a><br>
+Apple平台可以自行編譯或使用<a href="#網頁版">網頁版</a>、<a href="#安裝在手機上">PWA網頁App</a><br>
 
-- 網頁<br>
+- <a href="#網頁版">網頁</a><br>
 - <a href="#安裝在手機上">PWA網頁App</a><br>
-- Android<br>
-- (測試中) iOS<br>
-- (測試中) iPadOS<br>
-- (測試中) macOS<br>
-- (測試中) Windows<br>
-- Linux版 (未編譯、未測試)<br><br>
+- <a href="https://github.com/iambjlu/iambjlu-dice/releases">Android</a><br>
+- <a href="https://github.com/iambjlu/iambjlu-dice/releases">Windows</a><br>
+- iOS<br>
+- iPadOS<br>
+- macOS<br>
+- <a href="https://github.com/iambjlu/iambjlu-dice/releases">Linux</a><br><br>
 
 
 # <a href="https://iambjlu-dice.web.app">網頁版</a>
