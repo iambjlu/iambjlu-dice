@@ -1,8 +1,8 @@
 # 骰子
-
 選擇困難終結者<br>
+<image src="web/icons/Icon-192.png" /><br>
 
-它只是個Side Project練手Dart語言，同時解決自己和周圍的人的選擇困難<br>
+它只是個Side Project，練手Dart語言，同時解決自己和周圍的人的選擇困難<br>
 所以可能有些細節改法較為粗糙或是看起來預設
 
 ### 支援平台：

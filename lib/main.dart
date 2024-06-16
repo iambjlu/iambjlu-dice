@@ -21,11 +21,13 @@ class DiceScreen extends StatefulWidget {
 
 class _DiceScreenState extends State<DiceScreen> {
   String _diceResult = '?';
+  String _imagePath= 'assets/dicex.png';
 
   void _rollDice() {
-    HapticFeedback.vibrate();
+    HapticFeedback.mediumImpact();
     setState(() {
       _diceResult = (Random().nextInt(6) + 1).toString();
+      _imagePath='assets/dice'+_diceResult+'.png';
     });
   }
 
@@ -39,6 +41,8 @@ class _DiceScreenState extends State<DiceScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Image.asset(_imagePath,height: 75,),
+            const SizedBox(height: 40),
             const Text(
               '骰子數字',
               style: TextStyle(
@@ -56,8 +60,8 @@ class _DiceScreenState extends State<DiceScreen> {
             const SizedBox(height: 40),
             CupertinoButton.filled(
               child: const Text(
-                '🎲',
-                style: TextStyle(fontSize: 40),
+                '丟骰子',
+                style: TextStyle(fontSize: 20),
               ),
               onPressed: _rollDice,
             ),
